@@ -1,0 +1,32 @@
+﻿<Window x:Class="Brainiac.Design.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:avalonDock="clr-namespace:AvalonDock;assembly=AvalonDock"
+        xmlns:winformsIntegration="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:brainiacDesign="clr-namespace:Brainiac.Design"
+        Title="Brainiac Designer" Height="600" Width="900" Closing="MainWindow_FormClosing" Loaded="MainWindow_Shown">
+    <Grid>
+        <avalonDock:DockingManager x:Name="dockManager">
+            <avalonDock:ResizingPanel Orientation="Horizontal">
+                
+                <avalonDock:DockablePane>
+                    <avalonDock:DockableContent Title="Explorer">
+                        <winformsIntegration:WindowsFormsHost>
+                            <brainiacDesign:BehaviorTreeList x:Name="behaviorTreeList"
+                                                                     BehaviorRenamed="behaviorTreeList_BehaviorRenamed"
+                                                                     ClearBehaviors="behaviorTreeList_ClearBehaviors"
+                                                                     ShowBehavior="behaviorTreeList_ShowBehavior" />
+                        </winformsIntegration:WindowsFormsHost>
+                    </avalonDock:DockableContent>
+                </avalonDock:DockablePane>
+
+                <avalonDock:DocumentPane x:Name="BehaviorTreeViewDocumentPane" />
+                
+                <avalonDock:DockablePane>
+                    <brainiacDesign:PropertiesWindow />
+                </avalonDock:DockablePane>
+                
+            </avalonDock:ResizingPanel>
+        </avalonDock:DockingManager>
+    </Grid>
+</Window>
