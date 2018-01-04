@@ -576,6 +576,12 @@ namespace Brainiac.Design.Nodes
 			{
 				newnode._comment= _comment.Clone();
 			}
+            System.Type type = this.GetType();
+            foreach (System.Reflection.FieldInfo fi in type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public))
+            {
+                if (fi.DeclaringType == type)
+                    fi.SetValue(newnode, fi.GetValue(this));
+            }
 		}
 
 		/// <summary>

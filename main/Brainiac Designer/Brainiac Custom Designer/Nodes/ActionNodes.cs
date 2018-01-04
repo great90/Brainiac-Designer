@@ -20,13 +20,6 @@ namespace BrainiacCustomDesigner.Nodes
             : base("移动节点", "移动至目标点")
 		{
 		}
-
-		protected override void CloneProperties(Node newnode)
-		{
-			base.CloneProperties(newnode);
-            Move node = (Move)newnode;
-            node.steps = steps;
-		}
 	}
 
     public class Sleep : Action
@@ -42,13 +35,6 @@ namespace BrainiacCustomDesigner.Nodes
         public Sleep()
             : base("休眠节点", "休眠指定秒数")
         {
-        }
-
-        protected override void CloneProperties(Node newnode)
-        {
-            base.CloneProperties(newnode);
-            Sleep node = (Sleep)newnode;
-            node.second = second;
         }
     }
 }

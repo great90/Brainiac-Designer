@@ -20,12 +20,5 @@ namespace BrainiacCustomDesigner.Nodes
             : base("概率节点", "随机概率执行子节点")
 		{
 		}
-
-		protected override void CloneProperties(Node newnode)
-		{
-			base.CloneProperties(newnode);
-            Probability node = (Probability)newnode;
-            node.percent = percent;
-		}
 	}
 }
