@@ -1,0 +1,11 @@
+E:\Brainiac Designer\Brainiac Custom Designer\bin\Debug\Brainiac Custom Designer.dll
+E:\Brainiac Designer\Brainiac Custom Designer\bin\Debug\Brainiac Custom Designer.pdb
+E:\Brainiac Designer\Brainiac Custom Designer\bin\Debug\Brainiac.Design.dll
+E:\Brainiac Designer\Brainiac Custom Designer\bin\Debug\Brainiac.Design.pdb
+E:\Brainiac Designer\out\plugins\BrainiacCustomDesigner.dll
+E:\Brainiac Designer\out\plugins\BrainiacCustomDesigner.pdb
+E:\Brainiac Designer\Brainiac Custom Designer\obj\Debug\Brainiac Custom Designer.csprojResolveAssemblyReference.cache
+E:\Brainiac Designer\Brainiac Custom Designer\obj\Debug\BrainiacCustomDesigner.Properties.Resources.resources
+E:\Brainiac Designer\Brainiac Custom Designer\obj\Debug\Brainiac Custom Designer.csproj.GenerateResource.Cache
+E:\Brainiac Designer\Brainiac Custom Designer\obj\Debug\BrainiacCustomDesigner.dll
+E:\Brainiac Designer\Brainiac Custom Designer\obj\Debug\BrainiacCustomDesigner.pdb
