@@ -57,24 +57,7 @@ namespace BrainiacCustomDesigner.Exporters
 
         protected void ExportNodeProperties(StreamWriter file, Node node, string linePrefix = "")
         {
-            System.Console.WriteLine("===========================================");
-            foreach (DesignerPropertyInfo info in node.GetDesignerProperties())
-                System.Console.WriteLine("{0} : {1}", info.Property.Name, info.GetValue(node));
-            System.Console.WriteLine("-------------------------------------------");
-            foreach (string s in node.GetNodePropertyExcludedProperties())
-                System.Console.WriteLine(s);
-            System.Console.WriteLine("-------------------------------------------");
-
-            /*System.Type type = node.GetType();
-            foreach (PropertyInfo info in type.GetProperties(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public))
-                if (info.DeclaringType == type)
-                    System.Console.WriteLine("{0} : {1} {2} {3}", info.Name, info.GetValue(node, null), info.DeclaringType, type);
-            */
-            foreach (System.Reflection.FieldInfo fi in node.GetType().GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public))
-                System.Console.WriteLine("{0} : {1} {2} {3}", fi.Name, fi.GetValue(node), fi.DeclaringType, node.GetType());
-             
-            System.Console.WriteLine("===========================================");
-            IList<DesignerPropertyInfo> properties = new List<DesignerPropertyInfo>();
+           IList<DesignerPropertyInfo> properties = new List<DesignerPropertyInfo>();
             foreach (DesignerPropertyInfo info in node.GetDesignerProperties())
             {
                 if (!info.Attribute.HasFlags(DesignerProperty.DesignerFlags.NoExport))
