@@ -1,5 +1,5 @@
-out
-obj
-Debug
-Release
+out/
+obj/
+Debug/
+Release/
 *.htm
