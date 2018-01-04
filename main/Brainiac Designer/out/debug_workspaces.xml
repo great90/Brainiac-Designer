@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<workspaces selected="Uprising">
+<workspaces selected="test1">
   <workspace name="Design Mode" folder="behaviors\Design Mode" export="">
     <plugin>DesignMode.dll</plugin>
   </workspace>
@@ -14,5 +14,8 @@
   </workspace>
   <workspace name="Uprising" folder="behaviors\Uprising" export="exported\Uprising">
     <plugin>Uprising.dll</plugin>
+  </workspace>
+  <workspace name="test1" folder="$DOCUMENTS\Brainiac Designer\Behaviors" export="F:\">
+    <plugin>BrainiacCustomDesigner.dll</plugin>
   </workspace>
 </workspaces>

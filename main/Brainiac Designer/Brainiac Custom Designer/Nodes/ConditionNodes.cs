@@ -6,10 +6,10 @@ using Brainiac.Design.Attributes;
 
 namespace BrainiacCustomDesigner.Nodes
 {
-	public class Probability : CustomCondition
+	public class Probability : Condition
 	{
         protected int percent = 0;
-        [DesignerInteger("概率", "百分比", "Basic", DesignerProperty.DisplayMode.Parameter, 0, DesignerProperty.DesignerFlags.NoFlags, "Percent", 0, 100, 1, "percent")]
+        [DesignerInteger("概率", "百分比", "Basic", DesignerProperty.DisplayMode.Parameter, 0, DesignerProperty.DesignerFlags.NoFlags, "Percent", 0, 100, 1, "%")]
         public int Percent
         {
             get { return percent; }
@@ -19,7 +19,6 @@ namespace BrainiacCustomDesigner.Nodes
         public Probability()
             : base("概率节点", "随机概率执行子节点")
 		{
-            className = "Probability";
 		}
 
 		protected override void CloneProperties(Node newnode)

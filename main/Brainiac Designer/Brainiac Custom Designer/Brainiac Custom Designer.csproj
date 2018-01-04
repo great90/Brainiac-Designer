@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\out\plugins\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -39,17 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExporterCustomLua.cs" />
+    <Compile Include="LuaExporter.cs" />
     <Compile Include="BrainiacCustomDesigner.cs" />
+    <Compile Include="Nodes\CompositeNodes.cs" />
     <Compile Include="Nodes\DecoratorNodes.cs" />
     <Compile Include="Nodes\ConditionNodes.cs" />
     <Compile Include="Nodes\ActionNodes.cs" />
-    <Compile Include="Nodes\CustomSequence.cs" />
-    <Compile Include="Nodes\CustomSelector.cs" />
-    <Compile Include="Nodes\CustomParallel.cs" />
-    <Compile Include="Nodes\CustomDecorator.cs" />
-    <Compile Include="Nodes\CustomCondition.cs" />
-    <Compile Include="Nodes\CustomAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs" />
   </ItemGroup>

@@ -187,7 +187,7 @@ namespace Brainiac.Design
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(290, 390);
+			this.ClientSize = new System.Drawing.Size(300, 420);
 			this.ControlBox = false;
 			this.Controls.Add(this.exportFolderButton);
 			this.Controls.Add(this.exportFolderTextBox);
