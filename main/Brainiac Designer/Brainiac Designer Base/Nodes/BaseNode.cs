@@ -42,6 +42,22 @@ namespace Brainiac.Design.Nodes
 	/// </summary>
 	public abstract partial class BaseNode
 	{
+        private static int NodeCount = 0;
+        private int _id;
+
+        /// <summary>
+        /// The ID of this node.
+        /// </summary>
+        public int ID
+        {
+            get { return _id; }
+        }
+
+        public virtual string Type
+        {
+            get { return this.GetType().Name; }
+        }
+
 		protected BaseNode _parent;
 
 		/// <summary>
@@ -108,6 +124,7 @@ namespace Brainiac.Design.Nodes
 		/// </summary>
 		protected BaseNode()
 		{
+            _id = ++NodeCount;
 			_children= new ConnectedChildren(this);
 		}
 
