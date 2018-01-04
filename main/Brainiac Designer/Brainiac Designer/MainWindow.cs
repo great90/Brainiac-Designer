@@ -282,8 +282,8 @@ namespace Brainiac.Design
 			// show controls
 			if(Settings.Default.ShowControlsOnStartUp)
 			{
-				ControlsDialog ctrldlg= new ControlsDialog();
-				ctrldlg.ShowDialog();
+				//ControlsDialog ctrldlg= new ControlsDialog();
+				//ctrldlg.ShowDialog();
 			}
 		}
 

@@ -1574,8 +1574,8 @@ namespace Brainiac.Design
 
 		private void controlsToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			ControlsDialog dlg= new ControlsDialog();
-			dlg.Show();
+			//ControlsDialog dlg= new ControlsDialog();
+			//dlg.Show();
 		}
 	}
 }
