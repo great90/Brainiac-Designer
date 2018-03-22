@@ -571,17 +571,17 @@ namespace Brainiac.Design.Nodes
 			foreach(Attachments.Attachment attach in _attachments)
 				newnode.AddAttachment(attach.Clone(newnode));
 
-			// clone comment
-			if(_comment !=null)
-			{
-				newnode._comment= _comment.Clone();
-			}
             System.Type type = this.GetType();
             foreach (System.Reflection.FieldInfo fi in type.GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public))
             {
                 if (fi.DeclaringType == type)
                     fi.SetValue(newnode, fi.GetValue(this));
             }
+			// clone comment
+			if(_comment !=null)
+			{
+				newnode._comment= _comment.Clone();
+			}
 		}
 
 		/// <summary>
